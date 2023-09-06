@@ -1,8 +1,8 @@
 # base16-fish (https://github.com/tomyun/base16-fish)
 # based on base16-shell (https://github.com/chriskempson/base16-shell)
-# Tomorrow Night scheme by Chris Kempson (http://chriskempson.com)
+# Tomorrow Night Eighties scheme by Chris Kempson (http://chriskempson.com)
 
-function base16-tomorrow-night-eighties -d "Tomorrow Night"
+function base16-tomorrow-night-eighties -d "Tomorrow Night Eighties"
   set color00 2d/2d/2d # Base 00 - Black
   set color01 f2/77/7a # Base 08 - Red
   set color02 99/cc/99 # Base 0B - Green

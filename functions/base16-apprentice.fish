@@ -4,27 +4,27 @@
 
 function base16-apprentice -d "Apprentice"
   set color00 26/26/26 # Base 00 - Black
-  set color01 5F/87/87 # Base 08 - Red
-  set color02 87/AF/87 # Base 0B - Green
-  set color03 5F/87/87 # Base 0A - Yellow
-  set color04 FF/FF/AF # Base 0D - Blue
-  set color05 87/AF/D7 # Base 0E - Magenta
-  set color06 5F/87/5F # Base 0C - Cyan
-  set color07 BC/BC/BC # Base 05 - White
-  set color08 6C/6C/6C # Base 03 - Bright Black
+  set color01 44/44/44 # Base 08 - Red
+  set color02 ff/ff/af # Base 0B - Green
+  set color03 87/af/87 # Base 0A - Yellow
+  set color04 87/87/af # Base 0D - Blue
+  set color05 5f/af/af # Base 0E - Magenta
+  set color06 87/af/d7 # Base 0C - Cyan
+  set color07 5f/5f/87 # Base 05 - White
+  set color08 87/87/5f # Base 03 - Bright Black
   set color09 $color01 # Base 08 - Bright Red
   set color10 $color02 # Base 0B - Bright Green
   set color11 $color03 # Base 0A - Bright Yellow
   set color12 $color04 # Base 0D - Bright Blue
   set color13 $color05 # Base 0E - Bright Magenta
   set color14 $color06 # Base 0C - Bright Cyan
-  set color15 FF/FF/FF # Base 07 - Bright White
-  set color16 FF/87/00 # Base 09
-  set color17 5F/87/AF # Base 0F
-  set color18 30/30/30 # Base 01
-  set color19 33/33/33 # Base 02
-  set color20 78/78/78 # Base 04
-  set color21 C9/C9/C9 # Base 06
+  set color15 6c/6c/6c # Base 07 - Bright White
+  set color16 ff/87/00 # Base 09
+  set color17 bc/bc/bc # Base 0F
+  set color18 af/5f/5f # Base 01
+  set color19 5f/87/5f # Base 02
+  set color20 5f/87/af # Base 04
+  set color21 5f/87/87 # Base 06
   set colorfg $color07 # Base 05 - White
   set colorbg $color00 # Base 00 - Black
 
@@ -78,12 +78,12 @@ function base16-apprentice -d "Apprentice"
   # foreground / background / cursor color
   if test -n "$ITERM_SESSION_ID"
     # iTerm2 proprietary escape codes
-    put_template_custom Pg BCBCBC # foreground
+    put_template_custom Pg 5f5f87 # foreground
     put_template_custom Ph 262626 # background
-    put_template_custom Pi BCBCBC # bold color
-    put_template_custom Pj 333333 # selection color
-    put_template_custom Pk BCBCBC # selected text color
-    put_template_custom Pl BCBCBC # cursor
+    put_template_custom Pi 5f5f87 # bold color
+    put_template_custom Pj 5f875f # selection color
+    put_template_custom Pk 5f5f87 # selected text color
+    put_template_custom Pl 5f5f87 # cursor
     put_template_custom Pm 262626 # cursor text
   else
     put_template_var 10 $colorfg
@@ -97,10 +97,10 @@ function base16-apprentice -d "Apprentice"
   end
 
   # set syntax highlighting colors
-  set -U fish_color_autosuggestion 333333
+  set -U fish_color_autosuggestion 5f875f
   set -U fish_color_cancel -r
   set -U fish_color_command green #white
-  set -U fish_color_comment 333333
+  set -U fish_color_comment 5f875f
   set -U fish_color_cwd green
   set -U fish_color_cwd_root red
   set -U fish_color_end brblack #blue
@@ -111,11 +111,11 @@ function base16-apprentice -d "Apprentice"
   set -U fish_color_match --background=brblue
   set -U fish_color_normal normal
   set -U fish_color_operator blue #green
-  set -U fish_color_param 787878
+  set -U fish_color_param 5f87af
   set -U fish_color_quote yellow #brblack
   set -U fish_color_redirection cyan
-  set -U fish_color_search_match bryellow --background=333333
-  set -U fish_color_selection white --bold --background=333333
+  set -U fish_color_search_match bryellow --background=5f875f
+  set -U fish_color_selection white --bold --background=5f875f
   set -U fish_color_status red
   set -U fish_color_user brgreen
   set -U fish_color_valid_path --underline

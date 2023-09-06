@@ -1,15 +1,15 @@
 # base16-fish (https://github.com/tomyun/base16-fish)
 # based on base16-shell (https://github.com/chriskempson/base16-shell)
-# Rosé Pine Dawn scheme by Emilia Dunfelt &lt;sayhi@dunfelt.se&gt;
+# Rosé Pine Dawn scheme by Emilia Dunfelt &lt;edun@dunfelt.se&gt;
 
 function base16-rose-pine-dawn -d "Rosé Pine Dawn"
   set color00 fa/f4/ed # Base 00 - Black
-  set color01 1f/1d/2e # Base 08 - Red
-  set color02 d7/82/7e # Base 0B - Green
-  set color03 ea/9d/34 # Base 0A - Yellow
-  set color04 56/94/9f # Base 0D - Blue
-  set color05 90/7a/a9 # Base 0E - Magenta
-  set color06 28/69/83 # Base 0C - Cyan
+  set color01 b4/63/7a # Base 08 - Red
+  set color02 28/69/83 # Base 0B - Green
+  set color03 d7/82/7e # Base 0A - Yellow
+  set color04 90/7a/a9 # Base 0D - Blue
+  set color05 ea/9d/34 # Base 0E - Magenta
+  set color06 56/94/9f # Base 0C - Cyan
   set color07 57/52/79 # Base 05 - White
   set color08 98/93/a5 # Base 03 - Bright Black
   set color09 $color01 # Base 08 - Bright Red
@@ -18,13 +18,13 @@ function base16-rose-pine-dawn -d "Rosé Pine Dawn"
   set color12 $color04 # Base 0D - Bright Blue
   set color13 $color05 # Base 0E - Bright Magenta
   set color14 $color06 # Base 0C - Bright Cyan
-  set color15 26/23/3a # Base 07 - Bright White
-  set color16 b4/63/7a # Base 09
-  set color17 c5/c3/ce # Base 0F
+  set color15 ce/ca/cd # Base 07 - Bright White
+  set color16 ea/9d/34 # Base 09
+  set color17 ce/ca/cd # Base 0F
   set color18 ff/fa/f3 # Base 01
   set color19 f2/e9/de # Base 02
-  set color20 6e/6a/86 # Base 04
-  set color21 55/51/69 # Base 06
+  set color20 79/75/93 # Base 04
+  set color21 57/52/79 # Base 06
   set colorfg $color07 # Base 05 - White
   set colorbg $color00 # Base 00 - Black
 
@@ -111,7 +111,7 @@ function base16-rose-pine-dawn -d "Rosé Pine Dawn"
   set -U fish_color_match --background=brblue
   set -U fish_color_normal normal
   set -U fish_color_operator blue #green
-  set -U fish_color_param 6e6a86
+  set -U fish_color_param 797593
   set -U fish_color_quote yellow #brblack
   set -U fish_color_redirection cyan
   set -U fish_color_search_match bryellow --background=f2e9de
